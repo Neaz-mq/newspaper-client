@@ -9,21 +9,27 @@ const Header = () => {
                 <NavLink to='/'>Home</NavLink>
             </li>
             <li>
-                <NavLink to='/services'>Add Articles</NavLink>
+                <NavLink to='/article'>Add Articles</NavLink>
             </li>
             <li>
-                <NavLink to='/service'>All Articles</NavLink>
+                <NavLink to='/articles'>All Articles</NavLink>
             </li>
 
            
             <li>
-                <NavLink to='/register'>Subscription</NavLink>
+                <NavLink to='/subscription'>Subscription</NavLink>
             </li>
             <li>
-                <NavLink to='/login'>Dashboard</NavLink>
+                <NavLink to='/dashboard'>Dashboard</NavLink>
+            </li>
+             <li>
+                <NavLink to='/myarticle'>My Articles</NavLink>
             </li>
             <li>
-                <NavLink to='/login'>Premium Articles</NavLink>
+                <NavLink to='/register'>Register</NavLink>
+            </li>
+            <li>
+                <NavLink to='/login'>Login</NavLink>
             </li>
 
         </>
@@ -60,7 +66,14 @@ const Header = () => {
         <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1 text-white text-base font-semibold">{links}</ul>
         </div>
-       
+        <div className="dropdown dropdown-end">
+      <label tabIndex={0} className="btn btn-ghost btn-circle avatar ml-20 lg:ml-0">
+        <div className="w-10 rounded-full ">
+          <a href=""><img alt="Tailwind CSS Navbar component" src="/public/profile.png" /></a>
+        </div>
+      </label>
+     
+    </div>
   
     </div>
     );
