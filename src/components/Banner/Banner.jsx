@@ -9,13 +9,13 @@ import img6 from '../../assets/images/banner6.jpg'
 
 const Banner = () => {
     return (
-        <div className="carousel w-full h-[600px]">
+        <div className="carousel w-full lg:h-[600px] ">
             <div id="slide1" className="carousel-item relative w-full">
                 <img src={img1} className="w-full" />
                 <div className="absolute h-full flex items-center  left-0   top-0 bg-gradient-to-r from-[#151515] to -[rgba(21, 21, 21, 0.00)] ">
                   <div className='text-white space-y-7 pl-12 w-1/2'>
-                    <h2 className="text-6xl font-bold">US Embassy Issues Warning for Americans Traveling in These 2 Countries</h2>
-                    <p>The U.S. Department of State issued a recent travel warning for U.S. citizens traveling between the Dominican Republic and Haiti, after a border closure was announced last week.</p>
+                    <h2 className="lg:text-6xl text-2xl font-bold">US Embassy Issues Warning for Americans Traveling in These 2 Countries</h2>
+                    <p className='hidden lg:block '>The U.S. Department of State issued a recent travel warning for U.S. citizens traveling between the Dominican Republic and Haiti, after a border closure was announced last week.</p>
                     <div>
                    
                     <button className="btn btn-active btn-secondary">Read More</button>
@@ -31,8 +31,8 @@ const Banner = () => {
             <img src={img2} className="w-full" />
                 <div className="absolute  h-full flex items-center  left-0   top-0 bg-gradient-to-r from-[#151515] to -[rgba(21, 21, 21, 0.00)] ">
                   <div className='text-white space-y-7 pl-12 w-1/2'>
-                    <h2 className="text-6xl font-bold">Uttarakhand Tunnel Rescue Delayed After Late-Night Snag Halts Drilling</h2>
-                    <p>Rescue efforts for the 41 workers trapped in Uttarakhand's Silkyara tunnel entered the final stretch today. However, drilling operations had to be halted late last night after the auger machine broke down, said tunneling expert Arnold Dix.</p>
+                    <h2 className="lg:text-6xl text-2xl font-bold">Uttarakhand Tunnel Rescue Delayed After Late-Night Snag Halts Drilling</h2>
+                    <p className='hidden lg:block '>Rescue efforts for the 41 workers trapped in Uttarakhand's Silkyara tunnel entered the final stretch today. However, drilling operations had to be halted late last night after the auger machine broke down, said tunneling expert Arnold Dix.</p>
                     <div>
                    
                     <button className="btn btn-active btn-secondary">Read More</button>
@@ -48,8 +48,8 @@ const Banner = () => {
             <img src={img3} className="w-full" />
                 <div className="absolute h-full flex items-center  left-0   top-0 bg-gradient-to-r from-[#151515] to -[rgba(21, 21, 21, 0.00)] ">
                   <div className='text-white space-y-7 pl-12 w-1/2'>
-                    <h2 className="text-6xl font-bold">Violent Clashes In Dublin After Children Stabbed Outside School</h2>
-                    <p>Protesters on Thursday fought running battles with police, torched vehicles and looted shops in Dublin, after three young children were injured in a knife attack outside a school.</p>
+                    <h2 className="lg:text-6xl text-2xl font-bold">Violent Clashes In Dublin After Children Stabbed Outside School</h2>
+                    <p className='hidden lg:block '>Protesters on Thursday fought running battles with police, torched vehicles and looted shops in Dublin, after three young children were injured in a knife attack outside a school.</p>
                     <div>
                     <button className="btn btn-active btn-secondary">Read More</button>
                     </div>
@@ -64,8 +64,8 @@ const Banner = () => {
             <img src={img4} className="w-full" />
                 <div className="absolute h-full flex items-center  left-0   top-0 bg-gradient-to-r from-[#151515] to -[rgba(21, 21, 21, 0.00)] ">
                   <div className='text-white space-y-7 pl-12 w-1/2'>
-                    <h2 className="text-6xl font-bold">Dutch Leader, Who Once Defended BJPs Nupur Sharma</h2>
-                    <p>Far-right leader Geert Wilders was the surprise victor in the Netherlands elections, after a late surge that catapulted his anti-EU party to a resounding victory over his mainstream rivals</p>
+                    <h2 className="lg:text-6xl text-2xl font-bold">Dutch Leader, Who Once Defended BJPs Nupur Sharma</h2>
+                    <p className='hidden lg:block '>Far-right leader Geert Wilders was the surprise victor in the Netherlands elections, after a late surge that catapulted his anti-EU party to a resounding victory over his mainstream rivals</p>
                     <div>
                     <button className="btn btn-active btn-secondary">Read More</button>
                     </div>
@@ -81,8 +81,8 @@ const Banner = () => {
             <img src={img5} className="w-full" />
                 <div className="absolute  h-full flex items-center  left-0   top-0 bg-gradient-to-r from-[#151515] to -[rgba(21, 21, 21, 0.00)] ">
                   <div className='text-white space-y-7 pl-12 w-1/2'>
-                    <h2 className="text-6xl font-bold">Hamas To Release 13 Hostages Today After Israel Pauses Gaza Attack</h2>
-                    <p>A short truce in the Israel-Hamas war in Gaza will start in a few hours and exchange of hostages is expected to take place later today, mediator Qatar said. The four-day pause in fighting comes after nearly seven weeks of intense fighting</p>
+                    <h2 className="lg:text-6xl text-2xl font-bold">Hamas To Release 13 Hostages Today After Israel Pauses Gaza Attack</h2>
+                    <p className='hidden lg:block '>A short truce in the Israel-Hamas war in Gaza will start in a few hours and exchange of hostages is expected to take place later today, mediator Qatar said. The four-day pause in fighting comes after nearly seven weeks of intense fighting</p>
                     <div>
                     <button className="btn btn-active btn-secondary">Read More</button>
                     </div>
@@ -98,8 +98,8 @@ const Banner = () => {
             <img src={img6} className="w-full" />
                 <div className="absolute  h-full flex items-center  left-0   top-0 bg-gradient-to-r from-[#151515] to -[rgba(21, 21, 21, 0.00)] ">
                   <div className='text-white space-y-7 pl-12 w-1/2'>
-                    <h2 className="text-6xl font-bold">This Quiet Blockbuster at the Supreme Court Could Affect All Americans</h2>
-                    <p>Some Supreme Court terms are characterized by a single blockbuster case. This term largely revolves around a single blockbuster question: Will our government retain the capacity to address the most pressing issues of our time?</p>
+                    <h2 className="lg:text-6xl text-2xl font-bold">This Quiet Blockbuster at the Supreme Court Could Affect All Americans</h2>
+                    <p className='hidden lg:block '>Some Supreme Court terms are characterized by a single blockbuster case. This term largely revolves around a single blockbuster question: Will our government retain the capacity to address the most pressing issues of our time?</p>
                     <div>
                     <button className="btn btn-active btn-secondary">Read More</button>
                     </div>

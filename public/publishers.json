@@ -1,0 +1,52 @@
+[
+    {
+      
+     
+     "image": "https://i.ibb.co/n8GM3gY/pexels-andrea-piacquadio-3824771.jpg",
+
+     "name": "William Randolph Hearst",
+
+     "description": "He was a prominent American newspaper publisher",
+
+     "button": "View Detail" 
+
+     
+   },
+   {
+    
+     
+     "image": "https://i.ibb.co/5j5b3WH/pexels-pixabay-162547.jpg",
+
+     "name": "Rupert Murdoch",
+
+     "description": "He is an Australian-born media mogul",
+
+     "button": "View Detail" 
+  },
+  {
+    
+     
+     "image": "https://i.ibb.co/28Dc5jh/pexels-andrea-piacquadio-3783138.jpg",
+
+     "name": "Joseph Pulitzer",
+
+     "description": "He was a Hungarian-American newspaper publisher",
+
+     "button": "View Detail" 
+  },
+  {
+   
+     
+     "image": "https://i.ibb.co/RPQ0Kgm/pexels-andrea-piacquadio-3772623.jpg",
+
+     "name": "Arthur Ochs Sulzberger",
+
+     "description": "He was the publisher of The New York Times",
+
+     "button": "View Detail" 
+  }
+
+ 
+
+ 
+ ]
