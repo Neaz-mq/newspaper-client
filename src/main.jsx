@@ -15,6 +15,7 @@ import AuthProvider from './Hook/AuthProvider.jsx';
 import AddArticle from './components/AddArticle/AddArticle.jsx';
 import AllArticles from './components/AllArticles/AllArticles.jsx';
 import ArticleDetails from './components/ArticleDetails/ArticleDetails.jsx';
+import Subscription from './components/Subscription/Subscription.jsx';
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
         path: '/article/:id',
         element: <ArticleDetails></ArticleDetails>,
         loader: ({params}) => fetch(`http://localhost:5000/article/${params.id}`)
+      },
+      {
+        path: '/subscription',
+        element: <Subscription></Subscription>
       },
       {
         path: '/register',
