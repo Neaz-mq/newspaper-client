@@ -12,6 +12,8 @@ import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
 import Register from './components/Register/Register.jsx';
 import Login from './components/Login/Login.jsx';
 import AuthProvider from './Hook/AuthProvider.jsx';
+import AddArticle from './components/AddArticle/AddArticle.jsx';
+import AllArticles from './components/AllArticles/AllArticles.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,7 +23,16 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home></Home>
+        element: <Home></Home>,
+      },
+      {
+        path: '/article',
+        element: <AddArticle></AddArticle>
+      },
+      {
+        path: '/articles',
+        element: <AllArticles></AllArticles>,
+        loader: () => fetch('http://localhost:5000/article')
       },
       {
         path: '/register',
