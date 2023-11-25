@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 
 import {
@@ -9,15 +8,28 @@ import {
 } from "react-router-dom";
 import Root from './components/Root/Root.jsx';
 import Home from './components/Home/Home.jsx';
+import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
+import Register from './components/Register/Register.jsx';
+import Login from './components/Login/Login.jsx';
+import AuthProvider from './Hook/AuthProvider.jsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
         element: <Home></Home>
+      },
+      {
+        path: '/register',
+        element: <Register></Register>,
+      },
+      {
+        path: '/login',
+        element: <Login></Login>,
       },
     ]
   },
@@ -25,6 +37,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-   <RouterProvider router={router} />
+  <AuthProvider>
+  <RouterProvider router={router} />
+  </AuthProvider>
   </React.StrictMode>,
 )
