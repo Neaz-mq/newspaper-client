@@ -19,6 +19,8 @@ import Subscription from './components/Subscription/Subscription.jsx';
 import Dashboard from './components/Dashboard/Dashboard.jsx';
 import AllUsers from './components/Dashboards/AllUsers/AllUsers.jsx';
 import AllArticle from './components/Dashboards/AllArticle/AllArticle.jsx';
+import AddPublisher from './components/Dashboards/AddPublisher/AddPublisher.jsx';
+
 
 
 
@@ -71,7 +73,11 @@ const router = createBrowserRouter([
       {
         path: '/dashboard/articles',
         element: <AllArticle></AllArticle>
-      }
+      },
+      {
+        path: '/dashboard/publishers',
+        element: <AddPublisher></AddPublisher>
+      },
     ]
   }
 ]);
