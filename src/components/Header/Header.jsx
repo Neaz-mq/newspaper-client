@@ -32,7 +32,7 @@ const Header = () => {
                 <NavLink to='/subscription'>Subscription</NavLink>
             </li>
             <li>
-                <NavLink to='/dashboard'>Dashboard</NavLink>
+                <NavLink to='/dashboard/users'>Dashboard</NavLink>
             </li>
              <li>
                 <NavLink to='/myarticle'>My Articles</NavLink>

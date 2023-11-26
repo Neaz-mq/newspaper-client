@@ -16,6 +16,11 @@ import AddArticle from './components/AddArticle/AddArticle.jsx';
 import AllArticles from './components/AllArticles/AllArticles.jsx';
 import ArticleDetails from './components/ArticleDetails/ArticleDetails.jsx';
 import Subscription from './components/Subscription/Subscription.jsx';
+import Dashboard from './components/Dashboard/Dashboard.jsx';
+import AllUsers from './components/Dashboards/AllUsers/AllUsers.jsx';
+import AllArticle from './components/Dashboards/AllArticle/AllArticle.jsx';
+
+
 
 const router = createBrowserRouter([
   {
@@ -55,6 +60,20 @@ const router = createBrowserRouter([
       },
     ]
   },
+  {
+    path: '/dashboard',
+    element: <Dashboard></Dashboard>,
+    children: [
+      {
+        path: '/dashboard/users',
+        element: <AllUsers></AllUsers>,
+      },
+      {
+        path: '/dashboard/articles',
+        element: <AllArticle></AllArticle>
+      }
+    ]
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
