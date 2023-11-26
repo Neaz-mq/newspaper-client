@@ -82,7 +82,7 @@ const Header = () => {
       <label tabIndex={0} className="btn btn-ghost btn-circle avatar ml-20 lg:ml-0">
         
         <div className="w-10 rounded-full ">
-          <a href=""><img alt="Tailwind CSS Navbar component" src="/public/profile.png" /></a>
+          <a href="/"><img alt="Tailwind CSS Navbar component" src="https://i.ibb.co/Vg80T5P/profile.png" /></a>
         </div>
         
       </label>
