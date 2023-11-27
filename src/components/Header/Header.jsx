@@ -38,6 +38,9 @@ const Header = () => {
                 <NavLink to='/myarticle'>My Articles</NavLink>
             </li>
             <li>
+                <NavLink to='/premium'>Premium Articles</NavLink>
+            </li>
+            <li>
                 <NavLink to='/register'>Register</NavLink>
             </li>
             <li>
@@ -81,9 +84,14 @@ const Header = () => {
         <div className="dropdown dropdown-end">
       <label tabIndex={0} className="btn btn-ghost btn-circle avatar ml-20 lg:ml-0">
         
-        <div className="w-10 rounded-full ">
-          <a href="/"><img alt="Tailwind CSS Navbar component" src="https://i.ibb.co/Vg80T5P/profile.png" /></a>
-        </div>
+     
+
+       
+        <NavLink to='/profile'><img src="https://i.ibb.co/Vg80T5P/profile.png" /></NavLink>
+
+
+
+    
         
       </label>
      

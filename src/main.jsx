@@ -20,6 +20,8 @@ import Dashboard from './components/Dashboard/Dashboard.jsx';
 import AllUsers from './components/Dashboards/AllUsers/AllUsers.jsx';
 import AllArticle from './components/Dashboards/AllArticle/AllArticle.jsx';
 import AddPublisher from './components/Dashboards/AddPublisher/AddPublisher.jsx';
+import Premiums from './components/Premiums/Premiums.jsx';
+import MyProfile from './components/MyProfile/MyProfile.jsx';
 
 
 
@@ -53,12 +55,20 @@ const router = createBrowserRouter([
         element: <Subscription></Subscription>
       },
       {
+        path: '/premium',
+        element: <Premiums></Premiums>
+      },
+      {
         path: '/register',
         element: <Register></Register>,
       },
       {
         path: '/login',
         element: <Login></Login>,
+      },
+      {
+        path: '/profile',
+        element: <MyProfile></MyProfile>,
       },
     ]
   },
