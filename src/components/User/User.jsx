@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 
 
 const User = ({user}) => {
-    const {email} = user;
+    const {_id, email} = user;
     return (
         <div className="card card-compact  bg-base-100 shadow-xl">
        
@@ -9,8 +10,9 @@ const User = ({user}) => {
         <div className="card-body">
             <h2 className="card-title text-3xl font-semibold ">{email}</h2>
              
+            <Link to={`/updateUser/${_id}`}>
             <button className="btn btn-secondary">Update</button> 
-            
+            </Link>
            
         </div>
         

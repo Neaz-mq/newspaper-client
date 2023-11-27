@@ -22,6 +22,7 @@ import AllArticle from './components/Dashboards/AllArticle/AllArticle.jsx';
 import AddPublisher from './components/Dashboards/AddPublisher/AddPublisher.jsx';
 import Premiums from './components/Premiums/Premiums.jsx';
 import MyProfile from './components/MyProfile/MyProfile.jsx';
+import UpdateUser from './components/UpdateUser/UpdateUser.jsx';
 
 
 
@@ -70,6 +71,12 @@ const router = createBrowserRouter([
         path: '/profile',
         element: <MyProfile></MyProfile>,
       },
+      {
+        path: '/updateUser/:id',
+        element: <UpdateUser></UpdateUser>,
+        loader: ({params}) => fetch(`http://localhost:5000/user/${params.id}`)
+      },
+     
     ]
   },
   {
