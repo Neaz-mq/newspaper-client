@@ -11,7 +11,13 @@ const AllArticle = () => {
     }, [])
     return (
         <div>
-            <h1 className="text-4xl text-center my-10">All Articles</h1>
+            <h1 className="text-5xl text-center my-10 font-semibold">All Articles</h1>
+            <div className="text-center -mt-5 mb-5">
+ <div className="join">
+  <input className="input input-bordered join-item" placeholder="Search article...."/>
+  <button className="btn join-item rounded-r-full bg-[#FF444A] text-white">Search</button>
+</div>
+ </div>
             <div className="overflow-x-auto ml-5">
                 <table className="table  w-full ">
                     {/* head */}

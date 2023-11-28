@@ -18,7 +18,7 @@ const Statistic = () => {
     <div className="stat-title text-xl font-bold">All User</div>
     <div className="stat-value">
         <h1 className='text-3xl font-bold'>
-            {counterOn && <CountUp start={0} end={200} duration={2} delay={0} />}
+            {counterOn && <CountUp start={0} end={200} duration={4} delay={0} />}
             +
         </h1>
     </div>
@@ -28,7 +28,7 @@ const Statistic = () => {
     <div className="stat-title text-xl font-bold">Normal User</div>
     <div className="stat-value">
         <h1 className='text-3xl font-bold'>
-            {counterOn && <CountUp start={0} end={100} duration={2} delay={0} />}
+            {counterOn && <CountUp start={0} end={100} duration={4} delay={0} />}
             +
         </h1>
     </div>
@@ -38,7 +38,7 @@ const Statistic = () => {
     <div className="stat-title text-xl font-bold">Premium User</div>
     <div className="stat-value text-secondary">
         <h1 className='text-3xl font-bold'>
-            {counterOn && <CountUp start={0} end={50} duration={2} delay={0} />}
+            {counterOn && <CountUp start={0} end={50} duration={4} delay={0} />}
             +
         </h1>
     </div>
