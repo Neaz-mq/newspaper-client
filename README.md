@@ -1,8 +1,19 @@
-# React + Vite
+# Newspaper Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live site link: 
 
-Currently, two official plugins are available:
+* In the Home-Page user can watch Publishers information that come from Database
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Users can add Articles and show it All Articles page
+
+* Authentic Users can subscribe the articles 
+
+* User can see booked articles in My Article page
+
+* Authentic Users can  update his information
+
+* Admin can see the dashboard and statistic chart for publication
+
+* Admin can also see the All articles information in tabular format
+
+* Admin can add publisher from his route
