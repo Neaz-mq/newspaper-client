@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import User from "../../User/User";
+
 
 
 const AllUsers = () => {
@@ -10,6 +10,8 @@ const AllUsers = () => {
             .then(data => setUser(data));
     }, [])
 
+    
+   
     return (
         <div>
             <h1 className="text-4xl text-center my-10">All Users</h1>
@@ -20,25 +22,21 @@ const AllUsers = () => {
                     <thead>
                         <tr>
                             <th>
-                                ID
+                                SL.
                             </th>
 
 
                             <th>Email</th>
                             <th>Image</th>
+                            <th>Role</th>
                             
 
                         </tr>
                     </thead>
                     <tbody>
                         {
-                            user.map(user => <tr key={user._id}>
-                                <th>
-                                <td>
-                                    {user._id}
-                                   
-                                </td>
-                                </th>
+                            user.map((user,index) => <tr key={user._id}>
+                                <th>{index + 1}</th>
                                 
                                 <td>
                                     {user.email}
@@ -56,7 +54,7 @@ const AllUsers = () => {
                                     </div>
                                 </td>
                                 <td>
-                                <button className="btn btn-active btn-primary"> Make Admin</button>
+                              <button  className="btn btn-active btn-primary"> Make Admin</button>
                                    
                                 </td>
                               

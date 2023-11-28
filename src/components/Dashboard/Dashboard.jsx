@@ -11,11 +11,26 @@ const Dashboard = () => {
             {/* sidebar */}
             <div className="w-64 min-h-screen bg-sky-200">
             <ul className="menu p-4">
-            <li><NavLink to='/'><FaLandmark />Users Home</NavLink></li>
+           {
+              isAdmin ? <> 
+               <li><NavLink to='/dashboard/adminHome'><FaLandmark />Admin Home</NavLink></li>
             
-                <li><NavLink to='/dashboard/users'><FaAddressCard />All Users</NavLink></li>
-                <li><NavLink to='/dashboard/articles'><FaAlignJustify />All Articles</NavLink></li>
-                <li><NavLink to='/dashboard/publishers'><FaStamp />Add Publishers</NavLink></li>
+            <li><NavLink to='/dashboard/users'><FaAddressCard />All Users</NavLink></li>
+            <li><NavLink to='/dashboard/articles'><FaAlignJustify />All Articles</NavLink></li>
+            <li><NavLink to='/dashboard/publishers'><FaStamp />Add Publishers</NavLink></li>   
+
+            <li><NavLink to='/'><FaLandmark />Users Home</NavLink></li>
+              </>
+              :
+              <>
+               <li><NavLink to='/'><FaLandmark />Users Home</NavLink></li>
+            
+            <li><NavLink to='/dashboard/users'><FaAddressCard />All Users</NavLink></li>
+            <li><NavLink to='/dashboard/articles'><FaAlignJustify />All Articles</NavLink></li>
+            <li><NavLink to='/dashboard/publishers'><FaStamp />Add Publishers</NavLink></li>
+              
+              </>
+           }
                 </ul>
             </div>
             {/* dashboard content */}

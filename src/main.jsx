@@ -23,6 +23,9 @@ import AddPublisher from './components/Dashboards/AddPublisher/AddPublisher.jsx'
 import Premiums from './components/Premiums/Premiums.jsx';
 import MyProfile from './components/MyProfile/MyProfile.jsx';
 import UpdateUser from './components/UpdateUser/UpdateUser.jsx';
+import AdminHome from './components/Dashboards/AdminHome/AdminHome.jsx';
+import MyArticle from './components/MyArticle/MyArticle.jsx';
+import ArticleCard from './components/ArticleCard/ArticleCard.jsx';
 
 
 
@@ -54,6 +57,15 @@ const router = createBrowserRouter([
       {
         path: '/subscription',
         element: <Subscription></Subscription>
+      },
+      {
+        path: '/myarticle',
+        element: <MyArticle></MyArticle>
+      },
+      {
+        path: '/updateArticle/:id',
+        element: <ArticleDetails></ArticleDetails>,
+        loader: ({params}) => fetch(`http://localhost:5000/article/${params.id}`)
       },
       {
         path: '/premium',
@@ -94,6 +106,10 @@ const router = createBrowserRouter([
       {
         path: '/dashboard/publishers',
         element: <AddPublisher></AddPublisher>
+      },
+      {
+        path: '/dashboard/adminHome',
+        element: <AdminHome></AdminHome>
       },
     ]
   }
