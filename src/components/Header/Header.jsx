@@ -20,26 +20,26 @@ const Header = () => {
             <li>
                 <NavLink to='/'>Home</NavLink>
             </li>
-            <li>
+            { user && <li>
                 <NavLink to='/article'>Add Articles</NavLink>
-            </li>
+            </li>}
             <li>
                 <NavLink to='/articles'>All Articles</NavLink>
             </li>
 
            
-            <li>
+            { user &&<li>
                 <NavLink to='/subscription'>Subscription</NavLink>
-            </li>
-            <li>
+            </li> }
+            { user && <li>
                 <NavLink to='/dashboard/users'>Dashboard</NavLink>
-            </li>
-             <li>
+            </li>}
+            { user &&<li>
                 <NavLink to='/myarticle'>My Articles</NavLink>
-            </li>
-            <li>
+            </li>}
+            { user &&<li>
                 <NavLink to='/premium'>Premium Articles</NavLink>
-            </li>
+            </li>}
             <li>
                 <NavLink to='/register'>Register</NavLink>
             </li>
@@ -76,7 +76,7 @@ const Header = () => {
                     {links}
                 </ul>
             </div>
-            <a href='/'><img className='w-24 lg:ml-6 md:ml-64 ml-20' src="https://i.ibb.co/HVXjfKQ/Screenshot-2-removebg-preview.png" alt="" /></a>
+            <a href='/'><img className='w-24 lg:ml-3 md:ml-64 ml-20' src="https://i.ibb.co/HVXjfKQ/Screenshot-2-removebg-preview.png" alt="" /></a>
         </div>
         <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1 text-white text-base font-semibold">{links}</ul>
@@ -87,7 +87,7 @@ const Header = () => {
      
 
        
-        <NavLink to='/profile'><img src="https://i.ibb.co/Vg80T5P/profile.png" /></NavLink>
+      { user && <NavLink to='/profile'><img src="https://i.ibb.co/Vg80T5P/profile.png" /></NavLink>}
 
 
 

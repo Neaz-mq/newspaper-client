@@ -8,7 +8,18 @@ import Swal from "sweetalert2";
 const Login = () => {
     const { googleSignIn, logInUser } = useContext(AuthContext);
     const handleGoogleLogin = () => {
-      googleSignIn().then((result) => console.log(result.user));
+      googleSignIn().then(result => { 
+        console.log(result.user)  
+        Swal.fire({
+          title: 'Success!',
+          text: ' Login Successfully',
+          icon: 'success',
+          confirmButtonText: 'Cool'
+        });
+      
+      })
+
+    
   
     };
       const handleLogin = e => {
@@ -32,12 +43,7 @@ const Login = () => {
           })
           .catch(error => {
             console.error(error);
-            Swal.fire({
-              icon: "error",
-              title: "Oops...",
-              text: "Email or Password is Wrong!",
-             
-            });
+         
 
             
           })

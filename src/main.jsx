@@ -26,6 +26,7 @@ import UpdateUser from './components/UpdateUser/UpdateUser.jsx';
 import AdminHome from './components/Dashboards/AdminHome/AdminHome.jsx';
 import MyArticle from './components/MyArticle/MyArticle.jsx';
 import ArticleCard from './components/ArticleCard/ArticleCard.jsx';
+import PrivateRoute from './utility/PrivateRoute.jsx';
 
 
 
@@ -42,7 +43,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/article',
-        element: <AddArticle></AddArticle>
+        element: <PrivateRoute><AddArticle></AddArticle></PrivateRoute>
       },
       {
         path: '/articles',
@@ -56,11 +57,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/subscription',
-        element: <Subscription></Subscription>
+        element: <PrivateRoute><Subscription></Subscription></PrivateRoute>
       },
       {
         path: '/myarticle',
-        element: <MyArticle></MyArticle>
+        element: <PrivateRoute><MyArticle></MyArticle></PrivateRoute>
       },
       {
         path: '/updateArticle/:id',
@@ -69,7 +70,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/premium',
-        element: <Premiums></Premiums>
+        element: <PrivateRoute><Premiums></Premiums></PrivateRoute>
       },
       {
         path: '/register',
@@ -81,7 +82,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/profile',
-        element: <MyProfile></MyProfile>,
+        element: <PrivateRoute><MyProfile></MyProfile></PrivateRoute>,
       },
       {
         path: '/updateUser/:id',
@@ -93,7 +94,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/dashboard',
-    element: <Dashboard></Dashboard>,
+    element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
     children: [
       {
         path: '/dashboard/users',
