@@ -1,6 +1,6 @@
 # Newspaper Website
 
-Live site link: 
+Live site link: https://newspaper-website-ph.netlify.app/
 
 * In the Home-Page user can watch Publishers information that come from Database
 
