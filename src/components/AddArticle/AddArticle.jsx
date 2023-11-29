@@ -24,7 +24,7 @@ const AddArticle = () => {
 
          // send data to the server
 
-         fetch('http://localhost:5000/article', {
+         fetch('https://newspaper-server-wheat.vercel.app/article', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

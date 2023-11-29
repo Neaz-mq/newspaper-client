@@ -21,7 +21,7 @@ const Register = () => {
           console.log(result.user);
            // new user has been created
         const user = { email };
-        fetch('http://localhost:5000/user', {
+        fetch('https://newspaper-server-wheat.vercel.app/user', {
           method: 'POST',
           headers: {
             'content-type': 'application/json'

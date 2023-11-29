@@ -23,7 +23,7 @@ const AddPublisher = () => {
 
          // send data to the server
 
-         fetch('http://localhost:5000/publishers', {
+         fetch('https://newspaper-server-wheat.vercel.app/publishers', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

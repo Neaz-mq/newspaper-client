@@ -48,12 +48,12 @@ const router = createBrowserRouter([
       {
         path: '/articles',
         element: <AllArticles></AllArticles>,
-        loader: () => fetch('http://localhost:5000/article')
+        loader: () => fetch('https://newspaper-server-wheat.vercel.app/article')
       },
       {
         path: '/article/:id',
         element: <ArticleDetails></ArticleDetails>,
-        loader: ({params}) => fetch(`http://localhost:5000/article/${params.id}`)
+        loader: ({params}) => fetch(`https://newspaper-server-wheat.vercel.app/article/${params.id}`)
       },
       {
         path: '/subscription',
@@ -66,7 +66,7 @@ const router = createBrowserRouter([
       {
         path: '/updateArticle/:id',
         element: <ArticleDetails></ArticleDetails>,
-        loader: ({params}) => fetch(`http://localhost:5000/article/${params.id}`)
+        loader: ({params}) => fetch(`https://newspaper-server-wheat.vercel.app/article/${params.id}`)
       },
       {
         path: '/premium',
@@ -87,7 +87,7 @@ const router = createBrowserRouter([
       {
         path: '/updateUser/:id',
         element: <UpdateUser></UpdateUser>,
-        loader: ({params}) => fetch(`http://localhost:5000/user/${params.id}`)
+        loader: ({params}) => fetch(`https://newspaper-server-wheat.vercel.app/user/${params.id}`)
       },
      
     ]

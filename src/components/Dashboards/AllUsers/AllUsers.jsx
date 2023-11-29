@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const AllUsers = () => {
     const [user, setUser] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/user')
+        fetch('https://newspaper-server-wheat.vercel.app/user')
             .then(res => res.json())
             .then(data => setUser(data));
     }, [])

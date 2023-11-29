@@ -6,7 +6,7 @@ const Publishers = () => {
     const [publishers, setPublishers] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/publishers')
+        fetch('https://newspaper-server-wheat.vercel.app/publishers')
             .then(res => res.json())
             .then(data => setPublishers(data));
     }, [])

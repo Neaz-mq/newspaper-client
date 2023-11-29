@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const MyArticle = () => {
     const [article, setArticle] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/article')
+        fetch('https://newspaper-server-wheat.vercel.app/article')
             .then(res => res.json())
             .then(data => setArticle(data));
     }, [])

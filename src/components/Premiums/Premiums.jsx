@@ -7,7 +7,7 @@ const Premiums = () => {
     const [premiums, setPremiums] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/premiums')
+        fetch('https://newspaper-server-wheat.vercel.app/premiums')
             .then(res => res.json())
             .then(data => setPremiums(data));
     }, [])
